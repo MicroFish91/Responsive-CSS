@@ -1,0 +1,80 @@
+body {
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    /* color: #FFF; */
+}
+
+/* Typography */
+
+h1 {
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span {
+    color: #B7832F;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Layout */
+
+img {
+    max-width: 100%; 
+    /* Similar to just width: 100%, but keeps width from getting so big it distorts*/
+}
+
+.container {
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1em, 0;
+}
+
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+
+/* Taking off about 5% width off each for space-between to have space to redistribute! */
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .col-1, 
+    .col-2, 
+    .col-3 {
+        width: 100%;
+    }
+}
+
+.col-bg {
+    background: #212614;
+    color: #FFF;
+    padding: 1em;
+}
